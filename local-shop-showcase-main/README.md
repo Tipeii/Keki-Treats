@@ -46,11 +46,6 @@ This is a mini e-commerce website for Keki Treats, an authentic Kenyan bakery ba
 1. Simply double-click on `index.html` to open in your browser
 2. Navigate between pages using the navigation menu
 
-### GitHub Pages
-1. Push the project to a GitHub repository
-2. Go to Settings > Pages
-3. Select the main branch as the source
-4. Your site will be available at `https://yourusername.github.io/repository-name`
 
 ## Project Structure
 
