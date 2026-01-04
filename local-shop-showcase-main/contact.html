@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Keki Treats - Get in touch for orders, inquiries, or visit our bakery in Nairobi.">
+    <title>Contact Us | Keki Treats</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🥐</span>
+                <span class="logo-text">Keki Treats</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="cart-button" id="cartButton">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We'd love to hear from you</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <main class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question or special order request? Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <aside class="contact-info">
+                    <div class="info-card">
+                        <h3>📍 Visit Our Bakery</h3>
+                        <address>
+                            <p>Keki Treats Bakery</p>
+                            <p>Kenyatta Avenue, CBD</p>
+                            <p>Nairobi, Kenya</p>
+                        </address>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🕐 Opening Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>6:00 AM - 8:00 PM</span></li>
+                            <li><span>Saturday</span><span>7:00 AM - 9:00 PM</span></li>
+                            <li><span>Sunday</span><span>8:00 AM - 6:00 PM</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📞 Get in Touch</h3>
+                        <p><strong>Phone:</strong> +254 722 123 456</p>
+                        <p><strong>Email:</strong> hello@kekitreats.co.ke</p>
+                        <p><strong>WhatsApp:</strong> +254 722 123 456</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🥐</span>
+                        <span class="logo-text">Keki Treats</span>
+                    </div>
+                    <p class="footer-tagline">Baking happiness since 1985</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Visit Us</h3>
+                    <address>
+                        <p>Kenyatta Avenue, CBD</p>
+                        <p>Nairobi, Kenya</p>
+                        <p>Tel: +254 722 123 456</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Keki Treats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
